@@ -2,10 +2,13 @@
 
 ![jdk 17](https://img.shields.io/static/v1?label=jdk&message=17&color=blue)
 ![spring-boot](https://img.shields.io/static/v1?label=spring-boot&message=3.5.7&color=green)
+![dotenv-java](https://img.shields.io/static/v1?label=dotenv-java&message=3.2.0&color=blue)
 
 ## help
 * http://127.0.0.1:8080
 * http://127.0.0.1:8080/hello
+* http://127.0.0.1:8080/dotenv/list
+* http://127.0.0.1:8080/dotenv/myEnvVar1
 
 ### Reference Documentation
 

@@ -4,3 +4,6 @@ server:
 spring:
   application:
     name: spring-boot3-demo
+
+sb3d:
+  my_env_var1: ${MY_ENV_VAR1}
