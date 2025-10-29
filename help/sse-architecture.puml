@@ -1,0 +1,24 @@
+@startuml SSE架构图
+
+title 服务器推送事件(SSE)架构
+
+actor 客户端 as client
+participant "SSE服务端" as server
+participant "服务层" as service
+database 数据库 as db
+
+client -> server : GET /sse/data
+server -> service : 订阅更新
+service -> db : 查询数据
+db --> service : 数据
+service --> server : 流式更新
+server --> client : 事件流(text/event-stream)
+server --> client : 事件流(text/event-stream)
+server --> client : 事件流(text/event-stream)
+
+note over client,server
+    SSE连接保持开启状态
+    服务端在有更新时主动推送
+end note
+
+@enduml
